@@ -3,4 +3,3 @@ root_path = File.expand_path(
 )
 
 cookbook_path File.join(root_path, "cookbooks")
-role_path File.join(root_path, "roles")
