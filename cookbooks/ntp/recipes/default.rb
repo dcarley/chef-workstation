@@ -1,7 +1,12 @@
-package "openntpd" do
-    action :install
+package_name = "openntpd"
+pkgs = ["ntpdate", package_name]
+
+pkgs.each do |pkg|
+    package pkg do
+        action :install
+    end
 end
 
-service "openntpd" do
+service package_name do
     action [:enable, :start]
 end
