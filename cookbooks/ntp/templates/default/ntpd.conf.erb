@@ -1,0 +1,17 @@
+# $OpenBSD: ntpd.conf,v 1.7 2004/07/20 17:38:35 henning Exp $
+# sample ntpd configuration file, see ntpd.conf(5)
+
+# Addresses to listen on (ntpd does not listen by default)
+#listen on *
+#listen on 127.0.0.1
+#listen on ::1
+
+# sync to a single server
+#server ntp.example.org
+
+# use a random selection of 4 public stratum 2 servers
+# see http://twiki.ntp.org/bin/view/Servers/NTPPoolServers
+# and http://www.pool.ntp.org/
+<% node[:ntp][:servers].each do |ntp_server| -%>
+server <%= ntp_server %>
+<% end -%>
