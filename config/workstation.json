@@ -1,6 +1,7 @@
 {
     "recipes": [
         "ssh",
-        "ntp"
+        "ntp",
+        "code", "net", "net::sniff", "shell", "vcs", "virt", "web"
     ]
 }
