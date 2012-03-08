@@ -1,3 +1,6 @@
 {
-    "recipes": [ "ssh" ]
+    "recipes": [
+        "ssh",
+        "ntp"
+    ]
 }
