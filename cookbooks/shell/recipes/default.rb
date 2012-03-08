@@ -1,4 +1,4 @@
-pkgs = %w{tmux pv}
+pkgs = %w{tmux tree pv}
 
 pkgs.each do |pkg|
     package pkg do

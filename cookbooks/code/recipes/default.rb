@@ -1,4 +1,4 @@
-pkgs = %w{vim ack-grep dos2unix tree}
+pkgs = %w{vim ack-grep dos2unix}
 
 pkgs.each do |pkg|
     package pkg do
