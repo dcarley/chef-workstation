@@ -11,7 +11,7 @@ define :dotfile_install do
     link source do
         to target
         owner REAL_USER
-        group REAL_USER
+        group REAL_GROUP
         only_if { source_exists }
     end
 end

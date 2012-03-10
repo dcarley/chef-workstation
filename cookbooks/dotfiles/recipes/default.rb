@@ -3,7 +3,7 @@ git node[:dotfiles][:path] do
     reference "master"
     action :sync
     user REAL_USER
-    group REAL_USER
+    group REAL_GROUP
 end
 
 node[:dotfiles][:dotfiles].each do |dotfile|
