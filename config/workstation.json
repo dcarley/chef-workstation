@@ -2,6 +2,14 @@
     "recipes": [
         "ssh",
         "ntp",
+        "dotfiles",
         "code", "net", "net::sniff", "shell", "vcs", "virt", "web"
-    ]
+    ],
+    "dotfiles": {
+        "dotfiles": [
+            ".vim", ".vimrc",
+            ".gitconfig",
+            ".tmux.conf"
+        ]
+    }
 }
