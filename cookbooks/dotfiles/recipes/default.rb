@@ -5,3 +5,7 @@ git node[:dotfiles][:path] do
     user REAL_USER
     group REAL_USER
 end
+
+node[:dotfiles][:dotfiles].each do |dotfile|
+    dotfile_install dotfile
+end
