@@ -8,7 +8,6 @@ pkgs.each do |pkg|
 end
 
 template "/etc/#{package_name}/ntpd.conf" do
-    mode 0644
     owner "root"
     group "root"
     source "ntpd.conf.erb"
