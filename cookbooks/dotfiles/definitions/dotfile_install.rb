@@ -1,9 +1,6 @@
-define :dotfile_install, :recipe => nil do
-    if params[:recipe]
-        include_recipe params[:recipe]
-    end
-
+define :dotfile_install do
     require 'pathname'
+
     source = File.join(REAL_HOME, params[:name])
     target = File.join(node[:dotfiles][:path], params[:name])
     target = Pathname.new(target).relative_path_from(Pathname.new(REAL_HOME)).to_s
