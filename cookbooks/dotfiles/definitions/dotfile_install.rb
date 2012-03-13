@@ -9,7 +9,7 @@ define :dotfile_install do
     log("dotfile '#{target}' does not exist") { level :warn } unless target_exists
 
     link source do
-        to target
+        to target_relative
         owner REAL_USER
         group REAL_GROUP
         only_if { target_exists }
