@@ -5,3 +5,7 @@ pkgs.each do |pkg|
         action :install
     end
 end
+
+execute "update-alternatives --set editor /usr/bin/vim.basic" do
+    not_if { File.readlink("/etc/alternatives/editor") == "/usr/bin/vim.basic" }
+end
