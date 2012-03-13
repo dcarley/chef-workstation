@@ -6,14 +6,14 @@ define :rbenv_install_version, :bundler => true do
     rbv_profile = File.join(rbenv_path, "plugins/ruby-build/share/ruby-build", params[:name])
 
     execute "rbenv install #{params[:name]}" do
-        command "/usr/bin/env -i #{rbenv_path}/bin/rbenv install #{params[:name]}"
+        command "sh -c '#{rbenv_path}/bin/rbenv install #{params[:name]}'"
         not_if { File.exists?(rbv_path) }
         only_if { File.exists?(rbv_profile) }
         user REAL_USER
     end
 
     execute "gem install bundler [#{params[:name]}]" do
-        command "/usr/bin/env -i #{rbv_path}/bin/gem install bundler"
+        command "sh -c '#{rbv_path}/bin/gem install bundler'"
         not_if { File.exists?("#{rbv_path}/bin/bundle") }
         user REAL_USER
     end
