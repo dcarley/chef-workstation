@@ -22,3 +22,4 @@ git File.join(plugin_dir, "ruby-build") do
 end
 
 include_recipe "rbenv::plugins"
+include_recipe "rbenv::versions"
