@@ -21,5 +21,6 @@ git File.join(plugin_dir, "ruby-build") do
     group REAL_GROUP
 end
 
+include_recipe "rbenv::bashrc"
 include_recipe "rbenv::plugins"
 include_recipe "rbenv::versions"
