@@ -3,7 +3,10 @@
         "ssh",
         "ntp",
         "dotfiles",
-        "code", "net", "net::sniff", "shell", "vcs", "virt", "web"
+        "code",
+        "rbenv",
+        "net", "net::sniff",
+        "shell", "vcs", "virt", "web"
     ],
     "dotfiles": {
         "dotfiles": [
