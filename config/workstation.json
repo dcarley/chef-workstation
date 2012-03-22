@@ -12,7 +12,8 @@
         "dotfiles": [
             ".vim", ".vimrc",
             ".gitconfig",
-            ".tmux.conf"
+            ".tmux.conf",
+            ".bundle"
         ]
     },
     "rbenv": {
