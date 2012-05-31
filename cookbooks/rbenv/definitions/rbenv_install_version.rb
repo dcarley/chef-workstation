@@ -1,4 +1,5 @@
 define :rbenv_install_version, :bundler => true do
+    include_recipe "curl"
     include_recipe "compile"
 
     rbenv_path = File.join(REAL_HOME, ".rbenv")
