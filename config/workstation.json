@@ -6,7 +6,8 @@
         "code",
         "rbenv",
         "net", "net::sniff",
-        "shell", "vcs", "virt", "web"
+        "shell", "vcs", "virt", "web",
+        "pidgin::lync"
     ],
     "dotfiles": {
         "dotfiles": [
