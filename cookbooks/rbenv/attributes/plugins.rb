@@ -1,4 +1,9 @@
 default[:rbenv][:plugins] = {
-    "rbenv-bundler" => "git://github.com/carsomyr/rbenv-bundler.git",
-    "rbenv-sudo"    => "git://github.com/dcarley/rbenv-sudo.git",
+    'rbenv-bundler' => {
+        :repo => 'git://github.com/carsomyr/rbenv-bundler.git',
+        :version => '0.93',
+    },
+    'rbenv-sudo'    => {
+        :repo => 'git://github.com/dcarley/rbenv-sudo.git',
+    },
 }

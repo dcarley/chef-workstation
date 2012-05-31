@@ -1,6 +1,6 @@
 git File.join(REAL_HOME, ".rbenv") do
-    repository node[:rbenv][:rbenv_repo]
-    reference "master"
+    repository node[:rbenv][:rbenv][:repo]
+    reference node[:rbenv][:rbenv][:version] || 'master'
     action :sync
     user REAL_USER
     group REAL_GROUP
@@ -14,8 +14,8 @@ directory plugin_dir do
 end
 
 git File.join(plugin_dir, "ruby-build") do
-    repository node[:rbenv][:rubybuild_repo]
-    reference "master"
+    repository node[:rbenv][:rubybuild][:repo]
+    reference node[:rbenv][:rubybuild][:version] || 'master'
     action :sync
     user REAL_USER
     group REAL_GROUP
