@@ -1,0 +1,19 @@
+#!/bin/bash
+
+[ -e '/usr/lib/pm-utils/functions' ] && . /usr/lib/pm-utils/functions
+
+suspend_bcm5974() { /sbin/rmmod bcm5974; }
+resume_bcm5974() { /sbin/modprobe bcm5974; }
+
+case "$1" in
+    suspend|hibernate)
+        suspend_bcm5974;
+        ;;
+    thaw|resume)
+        resume_bcm5974;
+        ;;
+    *)
+        ;;
+esac
+
+exit $?
