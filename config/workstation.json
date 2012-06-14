@@ -7,7 +7,7 @@
         "rbenv",
         "net", "net::sniff",
         "shell", "vcs", "virt", "web",
-        "pidgin::lync",
+        "comms::lync", "comms::skype",
         "vpn",
         "apple"
     ],
