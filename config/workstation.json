@@ -13,6 +13,7 @@
     ],
     "dotfiles": {
         "dotfiles": [
+            ".ackrc",
             ".vim", ".vimrc",
             ".gitconfig",
             ".tmux.conf",
