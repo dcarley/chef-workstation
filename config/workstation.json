@@ -17,7 +17,9 @@
             ".vim", ".vimrc",
             ".gitconfig",
             ".tmux.conf",
-            ".bundle"
+            ".bundle",
+            ".gconf/desktop/gnome/shell/windows/%gconf.xml",
+            ".gconf/apps/gnome-terminal/profiles/Default/%gconf.xml"
         ]
     },
     "rbenv": {
