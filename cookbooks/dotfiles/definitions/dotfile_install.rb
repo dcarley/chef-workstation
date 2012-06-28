@@ -4,7 +4,7 @@ define :dotfile_install do
     source = File.join(REAL_HOME, params[:name])
     target = File.join(node[:dotfiles][:path], params[:name])
     target_exists = File.exists?(target)
-    target_relative = Pathname.new(target).relative_path_from(Pathname.new(REAL_HOME)).to_s
+    target_relative = Pathname.new(target).relative_path_from(Pathname.new(source).parent).to_s
 
     log("dotfile '#{target}' does not exist") { level :warn } unless target_exists
 
