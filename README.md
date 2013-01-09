@@ -1,5 +1,9 @@
 A toy around with Chef to configure my local workstations.
 
-Execute with:
+For Mint:
 
-    sudo chef-solo -c config/solo.rb -j config/workstation.json
+    rbenv sudo chef-solo -c config/solo.rb -j config/mint.json
+
+For Mac:
+
+    chef-solo -c config/solo.rb -j config/mac.json
