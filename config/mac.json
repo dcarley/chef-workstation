@@ -1,5 +1,6 @@
 {
     "recipes": [
-      "homebrew"
+      "homebrew",
+      "code"
     ]
 }
