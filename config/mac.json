@@ -1,9 +1,19 @@
 {
     "recipes": [
       "homebrew",
+      "dotfiles",
       "code",
       "rbenv"
     ],
+    "dotfiles": {
+        "dotfiles": [
+            ".ackrc",
+            ".vim", ".vimrc",
+            ".gitconfig",
+            ".tmux.conf",
+            ".bundle"
+        ]
+    },
     "rbenv": {
         "versions": [ "1.9.3-p362" ]
     }
