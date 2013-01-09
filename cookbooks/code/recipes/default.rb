@@ -1,6 +1,8 @@
 include_recipe 'code::vim'
 
-pkgs = %w{ack-grep dos2unix}
+pkgs = %w{dos2unix}
+pkgs << node[:platform] == 'mac_os_x' ? 'ack' : 'ack-grep'
+
 pkgs.each do |pkg|
     package pkg do
         action :install
