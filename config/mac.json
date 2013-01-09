@@ -3,7 +3,8 @@
       "homebrew",
       "dotfiles",
       "code",
-      "rbenv"
+      "rbenv",
+      "shell", "vcs"
     ],
     "dotfiles": {
         "dotfiles": [
