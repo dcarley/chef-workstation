@@ -1,6 +1,10 @@
 {
     "recipes": [
       "homebrew",
-      "code"
-    ]
+      "code",
+      "rbenv"
+    ],
+    "rbenv": {
+        "versions": [ "1.9.3-p362" ]
+    }
 }
