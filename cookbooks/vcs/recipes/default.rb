@@ -1,4 +1,4 @@
-pkgs = %w{git gitg subversion git-svn}
+pkgs = %w{git gitg}
 
 pkgs.each do |pkg|
     package pkg do
