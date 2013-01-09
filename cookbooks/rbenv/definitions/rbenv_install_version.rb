@@ -1,6 +1,8 @@
 define :rbenv_install_version, :bundler => true do
     include_recipe "curl"
-    include_recipe "compile"
+    unless node[:platform] == 'mac_os_x'
+        include_recipe "compile"
+    end
 
     rbenv_path = File.join(REAL_HOME, ".rbenv")
     rbv_path = File.join(rbenv_path, "versions", params[:name])
