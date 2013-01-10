@@ -12,7 +12,8 @@
             ".vim", ".vimrc",
             ".gitconfig",
             ".tmux.conf",
-            ".bundle"
+            ".bundle",
+            "Library/Preferences/com.googlecode.iterm2.plist"
         ]
     },
     "rbenv": {
