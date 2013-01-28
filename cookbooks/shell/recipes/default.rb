@@ -1,3 +1,5 @@
+include_recipe "shell::bash"
+
 pkgs = %w{tmux tree pv}
 
 pkgs.each do |pkg|
